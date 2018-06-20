@@ -71,13 +71,11 @@
 }
 
 .service-item>p {
-    border: 1px solid black;
     font-size: 1.1vw;
-    text-align: center;
+    text-align: justify;
 }
 
 .service-item>ul {
-    border: 1px solid black;
     list-style-type: none;
     text-align: center;
     padding: 0px;
@@ -89,12 +87,18 @@
     flex-flow: column;
 }
 
-.service-item>ul>li>ul>li {
+.item-explain {
     list-style-type: none;
+    padding: 0px;
 }
 
-.item-explain>ul>li:not(:target):not(:hover)>ul {
+.item-explain>p {
+    text-align: justify;
+}
+
+.service-item>ul>li:not(:target):not(:hover)>ul {
     visibility: collapse;
+    display: none;
 }
 
 .service-item>button {
